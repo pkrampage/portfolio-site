@@ -14,7 +14,7 @@
     --text-color: #333;
     --light-text: #fff;
     --transition: all 0.3s ease;
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --border-radius:10px;
     --transform: translateY(-3px);
     --box-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -78,7 +78,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 header{
@@ -92,9 +91,6 @@ header{
     padding: 40px;
     height: 35vh;
     width: 100%;
-    max-width: 1000px;
-    margin-top: 15px;
-    border-radius: var(--border-radius);
 }
 header h1{
     font-size: 2.8em;
@@ -115,8 +111,6 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
-    border-radius: var(--border-radius);
 }
 nav .nav-logo a{
     color:var(--primary-color);
@@ -162,9 +156,7 @@ main{
     padding: 30px;
     gap: 30px;
     box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
     width: 100%;
-    max-width: 1000px;
 }
 main img{
     border-radius: 50%;
@@ -187,12 +179,10 @@ main p {
 }
 
 .main-container > section{
-    border-radius: var(--border-radius);
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
     padding: 30px 20px;
     width: 100%;
-    max-width: 1000px;
     box-shadow: var(--box-shadow);
 }
 .main-container > section a {
@@ -234,10 +224,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--light-text);
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
     width: 100%;
-    max-width: 1000px;
 }
 
 .subcontainer-grid{
@@ -262,15 +249,9 @@ footer {
 }
 
 .contact-form {
-    background-color: var(--secondary-bg-color); 
-    border-radius: var(--border-radius);
+    background-color: var(--secondary-bg-color);
     box-shadow: var(--box-shadow);
-    padding: 30px; 
-    flex-basis: 550px;
-    flex-grow: 1; 
-    flex-shrink: 1;
-    min-width: 300px; 
-    max-width: 500px; 
+    padding: 30px;
     box-sizing: border-box;
 }
 .contact-me-form{
@@ -307,14 +288,8 @@ footer {
 
 .contact-info{
     background-color: var(--secondary-bg-color);
-    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 30px;
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-width: 280px;
-    max-width: 400px;
     box-sizing: border-box;
 }
 .contact-info h3 {
