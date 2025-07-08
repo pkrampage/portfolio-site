@@ -5,14 +5,15 @@
 
 :root {
     --primary-bg-color: #F0F4F8;
-    --secondary-bg-color: #E0E8F0;
-    --primary-color: #2c52b3;
-    --accent-color: #FF8C42;
-    --accent-color-2: #6B93D3;
-    --hover-color: #E67A32;
-    --muted-color: #6A7B8C;
+    --secondary-bg-color: #E9EEF2;
+    --tertiary-bg-color: #F8F8F8;
+    --primary-color: #52357B;
+    --secondary-color: #5459AC;
+    --accent-color: #648DB3;
     --text-color: #333;
     --light-text: #fff;
+    --hover-color: #5459AC;
+    --muted-color: #6A7B8C;
     --transition: all 0.3s ease;
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --border-radius:10px;
@@ -36,6 +37,7 @@ body {
 body.dark-theme{
     --primary-bg-color:#1A1A2E;
     --secondary-bg-color:#2C2C4A;
+    --tertiary-bg-color: #21213C;
     --primary-color:#5D7DD3;
     --accent-color: #FFAC63;
     --accent-color-2: #7A9EE6;
@@ -149,14 +151,14 @@ nav li a.active{
 
 main{
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    gap: 30px;
-    box-shadow: var(--box-shadow);
+    gap: 10px;
     width: 100%;
+    height: 70vh;
+    text-align: center;
 }
 main img{
     border-radius: 50%;
@@ -183,7 +185,18 @@ main p {
     color: var(--text-color);
     padding: 30px 20px;
     width: 100%;
+    max-width: 1000px;
     box-shadow: var(--box-shadow);
+}
+.main-container > section:first-of-type{
+    border-radius: 10px 10px 0 0;
+}
+.main-container > section:nth-child(odd) {
+    background-color: var(--tertiary-bg-color);
+}
+.main-container > section:last-of-type {
+    margin-bottom: 50px;
+    border-radius: 0 0 10px 10px;
 }
 .main-container > section a {
     color: var(--primary-color);
@@ -197,7 +210,7 @@ main p {
     font-size: 1.8rem;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--accent-color-2);
+    border-bottom: 2px solid var(--accent-color);
 }
 .main-container > section h3 {
     color: var(--primary-color);
@@ -297,7 +310,7 @@ footer {
     font-size: 1.5em;
     margin-bottom: 25px;
     text-align: center;
-    border-bottom: 2px solid var(--accent-color-2);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
 }
 .contact-info p {
